@@ -21,21 +21,9 @@ class Book extends Component {
         <Document file={file} loading={'Please, wait sir!'}>
           <Page
             pageNumber={this.state.page}
-            //customTextRenderer={({ str, itemIndex }) => {
-            //return <mark>{str + ' |$'}</mark>;
-            //}}
-            scale={1.6}
+            scale={1.3}
             loading={null}
           />
-          {/* <Page pageNumber={124} scale={1.5} />
-          <Page pageNumber={125} width={900} />
-          <Page pageNumber={126} />
-          <Page pageNumber={127} />
-          <Page pageNumber={128} /> */}
-          {/* <Outline
-            onItemClick={o => console.log(o)}
-            onParseSuccess={o => console.info(o)}
-          /> */}
         </Document>
       </div>
     );
